@@ -4,27 +4,34 @@
 }
 
 html {
-  height: 100%;
+  font-size: 1rem;
 }
 
 body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 100%;
+
+  line-height: 1;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  background-image: url('../assets/img/bg.jpg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 }
 
 .container {
-  max-width: 1920px;
+  max-width: 85%;
   margin: 0 auto;
 }
 
 /* Bayan */
 
 .bayan {
-  background-image: url('../assets/img/bg.jpg');
-  background-size: 100%;
-  background-repeat: no-repeat;
+  flex: 1 0 auto;
 }
 
 .bayan__container {
@@ -34,31 +41,33 @@ body {
 }
 
 .bayan__title {
-  padding: 30px 30px 10px;
-  font-size: 50px;
+  padding: 2rem 2rem 1rem;
+  font-size: 3.5rem;
+  text-align: center;
   color: rgb(255,
       254,
       240);
 }
 
 .bayan__subtitle {
-  padding: 10px 20px 20px;
-  font-size: 35px;
+  padding: 1rem 1.5rem 1.5rem;
+  font-size: 2.5rem;
+  text-align: center;
   color: rgb(235, 223, 60);
 }
 
 .bayan__list {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 40px;
+  max-width: 95%;
+  margin: 0 auto 3rem;
+  padding: 1.5rem;
   background-color: rgba(255, 255, 255, 0.3);
 }
 
 .bayan__item {
-  max-width: 800px;
+  max-width: 95%;
   list-style: none;
-  margin: 0 0 10px;
-  padding: 20px;
+  margin: 0 auto 1rem;
+  padding: 1.5rem;
   background-color: rgb(255,
       254,
       240);
@@ -79,8 +88,9 @@ body {
 }
 
 .bayan__pic-title {
-  font-size: 16px;
+  font-size: 1.2rem;
   font-weight: 900;
+  color: rgb(140, 144, 160);
 }
 
 .bayan__list:hover .bayan__point {
@@ -94,26 +104,34 @@ body {
 .bayan__content {
   height: 0;
   margin: 0 auto;
-  /*   padding: 10px 0; */
   overflow: hidden;
-  text-align: center;
   transition: 0.5s;
 }
 
 .bayan__img {
+  display: block;
+  margin: 0 auto;
   width: 40%;
 }
 
 .bayan__input:hover+.bayan__label>.bayan__content {
   height: auto;
   margin: 0 auto;
-  padding: 10px 0;
+  padding: 1rem 0;
 }
 
 .bayan__input:checked+.bayan__label>.bayan__content {
   height: auto;
   margin: 0 auto;
-  padding: 10px 0;
+  padding: 1rem 0;
+}
+
+.bayan__input:checked+.bayan__label .bayan__pic-title {
+  color: #000;
+}
+
+.bayan__list:hover .bayan__pic-title {
+  color: #000;
 }
 
 .bayan__item:hover .bayan__point {
@@ -124,8 +142,13 @@ body {
   background-size: contain;
 }
 
+/* Footer */
+.footer {
+  flex: 0 0 auto;
+}
+
 .footer_content {
-  width: 1px;
-  height: 1px;
+  width: 0.1rem;
+  height: 0.1rem;
   background: transparent;
 }
