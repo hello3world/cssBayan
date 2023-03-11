@@ -106,25 +106,29 @@ body {
   margin: 0 auto;
   overflow: hidden;
   transition: 0.5s;
+  opacity: 0;
 }
 
 .bayan__img {
   display: block;
   margin: 0 auto;
-  width: 40%;
+  width: 80%;
 }
 
 .bayan__input:hover+.bayan__label>.bayan__content {
   height: auto;
   margin: 0 auto;
   padding: 1rem 0;
+  opacity: 1;
 }
 
 .bayan__input:checked+.bayan__label>.bayan__content {
   height: auto;
   margin: 0 auto;
   padding: 1rem 0;
+  opacity: 1;
 }
+
 
 .bayan__input:checked+.bayan__label .bayan__pic-title {
   color: #000;
