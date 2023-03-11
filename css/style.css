@@ -3,25 +3,28 @@
   box-sizing: border-box;
 }
 
-html {}
+html {
+  font-size: 1rem;
+}
 
 body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  line-height: 1;
 }
 
 .wrapper {
   display: flex;
   flex-direction: column;
-  /*   min-height: 100vh; */
   background-image: url('../assets/img/bg.jpg');
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
 
 .container {
-  max-width: 60%;
+  max-width: 85%;
   margin: 0 auto;
 }
 
@@ -40,6 +43,7 @@ body {
 .bayan__title {
   padding: 2rem 2rem 1rem;
   font-size: 3.5rem;
+  text-align: center;
   color: rgb(255,
       254,
       240);
@@ -48,6 +52,7 @@ body {
 .bayan__subtitle {
   padding: 1rem 1.5rem 1.5rem;
   font-size: 2.5rem;
+  text-align: center;
   color: rgb(235, 223, 60);
 }
 
@@ -137,6 +142,7 @@ body {
   background-size: contain;
 }
 
+/* Footer */
 .footer {
   flex: 0 0 auto;
 }
