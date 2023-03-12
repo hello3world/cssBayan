@@ -94,24 +94,20 @@ body {
 }
 
 .bayan__point {
-  background-position: 20px;
-  transition: background-position 0.5s;
+  display: block;
+  width: 1rem;
+  background: url('../assets/img/plus.png') no-repeat;
+  background-size: 1rem;
+  opacity: 1;
+  transition: all 0.5s ease-in-out;
 }
 
-.bayan__list:hover .bayan__point {
-  display: inline-block;
-  width: 1rem;
-  height: 1rem;
-  background: url('../assets/img/plus.png') no-repeat;
-  background-size: contain;
-  background-position: 0;
-}
+
 
 .bayan__content {
-  height: 0;
-  margin: 0 auto;
+  max-height: 0;
   overflow: hidden;
-  transition: 0.5s;
+  transition: all 1s ease-in;
   opacity: 0;
 }
 
@@ -121,36 +117,19 @@ body {
   width: 81%;
 }
 
-.bayan__input:hover+.bayan__label>.bayan__content {
-  height: auto;
-  margin: 0 auto;
+.bayan__input:checked~.bayan__content {
+  max-height: 100vh;
   padding: 1rem 0;
   opacity: 1;
+  transition: all 1s ease-in;
 }
 
-.bayan__input:checked+.bayan__label>.bayan__content {
-  height: auto;
-  margin: 0 auto;
-  padding: 1rem 0;
-  opacity: 1;
-}
-
-
-.bayan__input:checked+.bayan__label .bayan__pic-title {
+.bayan__input:checked~.bayan__name>.bayan__pic-title {
   color: #000;
 }
-
 
 .bayan__list:hover .bayan__pic-title {
   color: #000;
-}
-
-.bayan__item:hover .bayan__point {
-  display: inline-block;
-  width: 1rem;
-  height: 1rem;
-  background: url('../assets/img/close.png') no-repeat;
-  background-size: contain;
 }
 
 /* Footer */
