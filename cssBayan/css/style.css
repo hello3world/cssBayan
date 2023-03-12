@@ -121,6 +121,13 @@ body {
   width: 81%;
 }
 
+.bayan__input:hover+.bayan__label>.bayan__content {
+  height: auto;
+  margin: 0 auto;
+  padding: 1rem 0;
+  opacity: 1;
+}
+
 .bayan__input:checked+.bayan__label>.bayan__content {
   height: auto;
   margin: 0 auto;
@@ -131,6 +138,19 @@ body {
 
 .bayan__input:checked+.bayan__label .bayan__pic-title {
   color: #000;
+}
+
+
+.bayan__list:hover .bayan__pic-title {
+  color: #000;
+}
+
+.bayan__item:hover .bayan__point {
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  background: url('../assets/img/close.png') no-repeat;
+  background-size: contain;
 }
 
 /* Footer */
